@@ -1,0 +1,7 @@
+- description: Check OpenAPI yaml for validity
+  entry: redocly/openapi-cli:latest
+  files: (openapi|swagger).*\.(json|ya?ml)$
+  id: redocly-openapi-cli
+  language: docker_image
+  name: Check OpenAPI yaml for validity
+  stages: [ commit, push, manual ]
